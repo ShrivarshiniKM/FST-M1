@@ -155,7 +155,7 @@
 							</con:configuration>
 						</con:assertion>
 						<con:credentials>
-							<con:selectedAuthProfile>SanchariServer18</con:selectedAuthProfile>
+							<con:selectedAuthProfile>ShrivarshiniServer18</con:selectedAuthProfile>
 							<con:authType>No Authorization</con:authType>
 						</con:credentials>
 						<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
@@ -172,7 +172,7 @@
 						</con:settings>
 						<con:endpoint>https://api.github.com</con:endpoint>
 						<con:request>{
-	"title": "Sanchari9Key",
+	"title": "Shri18Key",
 	"key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEvDWkhYeC6hdlAr2VeVSTpolDzhNizx4UUfpaRi0M20"
 }</con:request>
 						<con:originalUri>https://api.github.com/user/keys</con:originalUri>
@@ -183,7 +183,7 @@
 							</con:configuration>
 						</con:assertion>
 						<con:credentials>
-							<con:selectedAuthProfile>SanchariServer18</con:selectedAuthProfile>
+							<con:selectedAuthProfile>ShriServer18</con:selectedAuthProfile>
 							<con:authType>No Authorization</con:authType>
 						</con:credentials>
 						<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
@@ -251,7 +251,7 @@
 	<con:jmsConnectionContainer/>
 	<con:oAuth2ProfileContainer>
 		<con:oAuth2Profile>
-			<con:name>SanchariServer18</con:name>
+			<con:name>ShriServer18</con:name>
 			<con:type>OAuth 2.0</con:type>
 			<con:accessToken/>
 			<con:accessTokenPosition>HEADER</con:accessTokenPosition>
@@ -299,7 +299,7 @@
 	</con:eventHandlers>
 	<con:authRepository>
 		<con:oAuth20AuthEntry>
-			<con:name>SanchariServer18</con:name>
+			<con:name>ShriServer18</con:name>
 			<con:type>OAuth 2.0</con:type>
 			<con:accessToken/>
 			<con:accessTokenPosition>HEADER</con:accessTokenPosition>

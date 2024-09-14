@@ -155,7 +155,7 @@
 							</con:configuration>
 						</con:assertion>
 						<con:credentials>
-							<con:selectedAuthProfile>AnjaliPatel2705</con:selectedAuthProfile>
+							<con:selectedAuthProfile>ShrivarshiniKM</con:selectedAuthProfile>
 							<con:authType>No Authorization</con:authType>
 						</con:credentials>
 						<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
@@ -172,7 +172,7 @@
 						</con:settings>
 						<con:endpoint>https://api.github.com</con:endpoint>
 						<con:request>{
-	"title": "Anjalikey",
+	"title": "Shrikey",
 	"key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEvDWkhYeC6hdlAr2VeVSTpolDzhNizx4UUfpaRi0M20"
 }</con:request>
 						<con:originalUri>https://api.github.com/user/keys</con:originalUri>
@@ -183,7 +183,7 @@
 							</con:configuration>
 						</con:assertion>
 						<con:credentials>
-							<con:selectedAuthProfile>AnjaliPatel2705</con:selectedAuthProfile>
+							<con:selectedAuthProfile>ShrivarshiniKM</con:selectedAuthProfile>
 							<con:authType>No Authorization</con:authType>
 						</con:credentials>
 						<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
@@ -225,7 +225,7 @@
 							</con:configuration>
 						</con:assertion>
 						<con:credentials>
-							<con:selectedAuthProfile>AnjaliPatel2705</con:selectedAuthProfile>
+							<con:selectedAuthProfile>SHrivarshiniKM</con:selectedAuthProfile>
 							<con:authType>No Authorization</con:authType>
 						</con:credentials>
 						<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
