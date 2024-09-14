@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <con:soapui-project id="e3ebd763-ebea-4ea3-a53a-66a3fe745194" created="3.53.0" activeEnvironment="Default environment" encryptionMode="Not encrypted" name="REST Project Activity 4" resourceRoot="" projectVersion="" updated="3.53.0 2024-05-13T12:06:25Z" xmlns:con="http://eviware.com/soapui/config">
 	<con:settings/>
@@ -300,5 +299,4 @@
 	</con:eventHandlers>
 	<con:authRepository/>
 	<con:tags/>
->>>>>>> 90ebe0af2dd106c986168b99c5940084daab7684
 </con:soapui-project>
