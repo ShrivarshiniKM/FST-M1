@@ -52,7 +52,7 @@
 				<con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 					<con:dataSource type="File">
 						<con:configuration>
-							<fileName>C:/Users/002YZN744/Desktop/RESTAPI_Activity4.txt</fileName>
+							<fileName>C:/Users/003ner744/Desktop/RESTAPI_Activity4.txt</fileName>
 							<separator>,</separator>
 							<trim>true</trim>
 							<charset>Cp1252</charset>
@@ -203,7 +203,7 @@
 				<con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 					<con:dataSource type="File">
 						<con:configuration>
-							<fileName>C:/Users/002YZN744/Desktop/RESTAPI_Activity4.txt</fileName>
+							<fileName>C:/Users/003ner744/Desktop/RESTAPI_Activity4.txt</fileName>
 							<separator>,</separator>
 							<trim>true</trim>
 							<charset>Cp1252</charset>
