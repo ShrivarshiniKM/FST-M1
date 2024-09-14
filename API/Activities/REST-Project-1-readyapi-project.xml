@@ -125,9 +125,9 @@
         <con:setting id="ErrorDetails">true</con:setting>
         <con:setting id="IncludeCoverage">true</con:setting>
         <con:setting id="GeneratableJUnitReport@Style">Multiple Pages</con:setting>
-        <con:setting id="GeneratableJUnitReport@Folder">C:\Users\003RXB744\Downloads</con:setting>
+        <con:setting id="GeneratableJUnitReport@Folder">C:\Users\003NER744\Downloads</con:setting>
         <con:setting id="GeneratableJUnitReport@Modify">true</con:setting>
-        <con:setting id="GeneratableAllureReport@Folder">C:\Users\003RXB744\Downloads</con:setting>
+        <con:setting id="GeneratableAllureReport@Folder">C:\Users\003NERB744\Downloads</con:setting>
       </con:settings>
       <con:testStep type="datasource" name="Data Source" id="2e79bc59-77be-4e17-82fa-58b7df7f1a96">
         <con:settings>
