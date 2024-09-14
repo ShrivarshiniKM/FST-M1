@@ -33,7 +33,7 @@ public class specificationTest {
 	@Test(priority = 1)
 	public void postRequest() {
 		Map<String, Object> reqBody = new HashMap<String, Object>();
-		reqBody.put("id", "2705");
+		reqBody.put("id", "1806");
 		reqBody.put("name", "Rocky");
 		reqBody.put("status", "alive");
 		

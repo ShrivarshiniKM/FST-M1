@@ -14,7 +14,7 @@ public class Activity1 {
     @Test(priority=1)
     public void addNewPet() {
         String reqBody = "{"
-            + "\"id\": 77232,"
+            + "\"id\": 1806,"
             + "\"name\": \"Riley\","
             + " \"status\": \"alive\""
         + "}";
@@ -25,7 +25,7 @@ public class Activity1 {
             .when().post(ROOT_URI); 
 
         // Assertion
-        response.then().body("id", equalTo(77232));
+        response.then().body("id", equalTo(1806));
         response.then().body("name", equalTo("Riley"));
         response.then().body("status", equalTo("alive"));
     }
@@ -34,11 +34,11 @@ public class Activity1 {
     public void getPetInfo() {
         Response response = 
             given().contentType(ContentType.JSON)
-            .when().pathParam("petId", "77232") 
+            .when().pathParam("petId", "1806") 
             .get(ROOT_URI + "/{petId}"); 
 
         // Assertion
-        response.then().body("id", equalTo(77232));
+        response.then().body("id", equalTo(1806));
         response.then().body("name", equalTo("Riley"));
         response.then().body("status", equalTo("alive"));
     }
@@ -47,10 +47,10 @@ public class Activity1 {
     public void deletePet() {
         Response response = 
             given().contentType(ContentType.JSON)
-            .when().pathParam("petId", "77232")
+            .when().pathParam("petId", "1806")
             .delete(ROOT_URI + "/{petId}"); 
         // Assertion
         response.then().body("code", equalTo(200));
-        response.then().body("message", equalTo("77232"));
+        response.then().body("message", equalTo("1806"));
     }
 }

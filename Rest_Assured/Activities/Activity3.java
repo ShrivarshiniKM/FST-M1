@@ -43,11 +43,11 @@ public class Activity3 {
 
     @Test(priority=1)
     public void addPets() {
-        String reqBody = "{\"id\": 77232, \"name\": \"Riley\", \"status\": \"alive\"}";
+        String reqBody = "{\"id\": 1806, \"name\": \"Riley\", \"status\": \"alive\"}";
         Response response = given().spec(requestSpec)
                 .body(reqBody)
                 .when().post();
-        reqBody = "{\"id\": 77233, \"name\": \"Hansel\", \"status\": \"alive\"}";
+        reqBody = "{\"id\": 1806, \"name\": \"Hansel\", \"status\": \"alive\"}";
         response = given().spec(requestSpec) 
                 .body(reqBody)
                 .when().post(); 

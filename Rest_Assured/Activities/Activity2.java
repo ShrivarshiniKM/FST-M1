@@ -29,7 +29,7 @@ public class Activity2 {
 
         // Assertion
         response.then().body("code", equalTo(200));
-        response.then().body("message", equalTo("2705"));
+        response.then().body("message", equalTo("1806"));
     }
     
     @Test(priority=2)
@@ -53,7 +53,7 @@ public class Activity2 {
             excp.printStackTrace();
         }
         
-        response.then().body("id", equalTo("2705"));
+        response.then().body("id", equalTo("1806"));
         response.then().body("username", equalTo("ShrivarshiniKM"));
         response.then().body("firstName", equalTo("Shrivarshini"));
         response.then().body("lastName", equalTo("KM"));
@@ -66,7 +66,7 @@ public class Activity2 {
     public void deleteUser() throws IOException {
         Response response = 
             given().contentType(ContentType.JSON)
-            .pathParam("username", "justinc")
+            .pathParam("username", "ShrivarshiniKM")
             .when().delete(ROOT_URI + "/{username}");
 
         response.then().body("code", equalTo(200));

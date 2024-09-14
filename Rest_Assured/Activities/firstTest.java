@@ -30,7 +30,7 @@ public class firstTest {
 		given().
 			baseUri("https://petstore.swagger.io/v2/pet").
 			header("Content-Type", "application/json").
-			pathParam("petId", 77232).
+			pathParam("petId", 1806).
 			log().all(true).
 		when().
 			get("/{petId}").
