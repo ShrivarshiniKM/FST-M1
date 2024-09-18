@@ -1,5 +1,3 @@
-package activities;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileWriter;
@@ -13,17 +11,20 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.equalTo;
 
 public class Activity2 {
+    // Set base URL
     final static String ROOT_URI = "https://petstore.swagger.io/v2/user";
 
     @Test(priority=1)
     public void addNewUserFromFile() throws IOException {
+        // Import JSON file
         FileInputStream inputJSON = new FileInputStream("src/test/java/activities/userinfo.json");
+        // Read JSON file as String
         String reqBody = new String(inputJSON.readAllBytes());
 
-        Response response = 
-            given().contentType(ContentType.JSON)
-            .body(reqBody) 
-            .when().post(ROOT_URI);
+        Response response =
+                given().contentType(ContentType.JSON) // Set headers
+                        .body(reqBody) // Pass request body from file
+                        .when().post(ROOT_URI); // Send POST request
 
         inputJSON.close();
 
@@ -31,45 +32,50 @@ public class Activity2 {
         response.then().body("code", equalTo(200));
         response.then().body("message", equalTo("1806"));
     }
-    
+
     @Test(priority=2)
     public void getUserInfo() {
+        // Import JSON file to write to
         File outputJSON = new File("src/test/java/activities/userGETResponse.json");
 
-        Response response = 
-            given().contentType(ContentType.JSON)
-            .pathParam("username", "ShrivarshiniKM")
-            .when().get(ROOT_URI + "/{username}");
-        
+        Response response =
+                given().contentType(ContentType.JSON) // Set headers
+                        .pathParam("username", "Shrivarshini") // Pass request body from file
+                        .when().get(ROOT_URI + "/{username}"); // Send POST request
+
         // Get response body
         String resBody = response.getBody().asPrettyString();
 
         try {
+            // Create JSON file
             outputJSON.createNewFile();
+            // Write response body to external file
             FileWriter writer = new FileWriter(outputJSON.getPath());
             writer.write(resBody);
             writer.close();
         } catch (IOException excp) {
             excp.printStackTrace();
         }
-        
-        response.then().body("id", equalTo("1806"));
-        response.then().body("username", equalTo("ShrivarshiniKM"));
-        response.then().body("firstName", equalTo("Shrivarshini"));
-        response.then().body("lastName", equalTo("KM"));
-        response.then().body("email", equalTo("shrikm@mail.com"));
-        response.then().body("password", equalTo("password12345"));
-        response.then().body("phone", equalTo("9823443450"));
+
+        // Assertion
+        response.then().body("id", equalTo(1806));
+        response.then().body("username", equalTo("shrivarshini"));
+        response.then().body("firstName", equalTo("shrivarshini"));
+        response.then().body("lastName", equalTo("km"));
+        response.then().body("email", equalTo("shrikm97@mail.com"));
+        response.then().body("password", equalTo("password@12345"));
+        response.then().body("phone", equalTo("9003844282"));
     }
-    
+
     @Test(priority=3)
     public void deleteUser() throws IOException {
-        Response response = 
-            given().contentType(ContentType.JSON)
-            .pathParam("username", "ShrivarshiniKM")
-            .when().delete(ROOT_URI + "/{username}");
+        Response response =
+                given().contentType(ContentType.JSON) // Set headers
+                        .pathParam("username", "shrivarshini") // Add path parameter
+                        .when().delete(ROOT_URI + "/{username}"); // Send POST request
 
+        // Assertion
         response.then().body("code", equalTo(200));
-        response.then().body("message", equalTo("ShrivarshiniKM"));
+        response.then().body("message", equalTo("shrivarshini"));
     }
 }
