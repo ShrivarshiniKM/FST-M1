@@ -24,11 +24,8 @@ public class Activity1 {
         options.setAppPackage("com.android.calculator2");
         options.setAppActivity(".Calculator");
         options.noReset();
-
         
         URL serverURL = new URL("http://localhost:4723/");
-
-      
         driver = new AndroidDriver(serverURL, options);
     }
 
