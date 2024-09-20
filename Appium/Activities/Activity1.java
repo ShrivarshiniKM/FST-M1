@@ -38,13 +38,42 @@ public class Activity1 {
         
         driver.findElement(AppiumBy.id("digit_5")).click();
         driver.findElement(AppiumBy.accessibilityId("multiply")).click();
+        driver.findElement(AppiumBy.id("digit_9")).click();
+        driver.findElement(AppiumBy.accessibilityId("equals")).click();
+        String result = driver.findElement(AppiumBy.id("result")).getText();
+        Assert.assertEquals(result, "45");
+    }
+@Test
+    public void multiplyTestLocators() {
+        // Perform the calculation
+     
+        driver.findElement(AppiumBy.xpath("//android.widget.Button[contains(@resource-id, 'digit5') AND (@text = '5')]")).click();
+        driver.findElement(AppiumBy.accessibilityId("multiply")).click();
         driver.findElement(AppiumBy.id("digit_8")).click();
         driver.findElement(AppiumBy.accessibilityId("equals")).click();
-
-        String result = driver.findElement(AppiumBy.id("result")).getText();
-
-        
+ 
+        // Find the result
+        String result = driver.findElement(AppiumBy.id("result_final")).getText();
+ 
+        // Assertion
         Assert.assertEquals(result, "40");
+    }
+    
+    @Test
+    public void listElements() {
+        // Wait for elements to load
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(
+            AppiumBy.className("android.webkit.WebView")
+        ));
+ 
+        // Find all text elements on the page
+        List<WebElement> textItems = driver.findElements(
+            AppiumBy.xpath("//android.view.View/android.widget.Button")
+        );
+        System.out.println(textItems.size());
+        for (WebElement textItem : textItems) {
+            System.out.println(textItem.getText());
+        }
     }
 
 
