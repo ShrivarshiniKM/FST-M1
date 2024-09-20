@@ -98,7 +98,7 @@
           <con:mediaType>application/json; charset=utf-8</con:mediaType>
           <con:status>404</con:status>
           <con:params/>
-          <con:element xmlns:ns="https://api.github.com/user/keys/89718546">ns:Fault</con:element>
+          <con:element xmlns:ns="https://api.github.com/user/keys">ns:Fault</con:element>
         </con:representation>
         <con:request name="Request 1" id="ca35be29-0199-4328-935e-1f2643b259d7" mediaType="application/json">
           <con:settings/>
@@ -123,7 +123,7 @@
     <con:testCase id="501e0005-82b4-4ea2-ae32-2cf059b31759" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Test Case" searchProperties="true" timeout="0">
       <con:settings>
         <con:setting id="GeneratableJUnitReport@Style">Multiple Pages</con:setting>
-        <con:setting id="GeneratableJUnitReport@Folder">C:\Users\002PWZ744\IdeaProjects\FST_SoapUI_Project</con:setting>
+        <con:setting id="GeneratableJUnitReport@Folder">C:\Users\003NER744\FST\API_Project</con:setting>
         <con:setting id="GeneratableJUnitReport@Modify">false</con:setting>
       </con:settings>
       <con:testStep type="restrequest" name="Request 1" id="bcadc416-fdbc-4729-aa0e-b1014b102caa">
@@ -205,7 +205,7 @@
             </con:settings>
             <con:endpoint>https://api.github.com</con:endpoint>
             <con:request/>
-            <con:originalUri>https://api.github.com/user/keys/89718546</con:originalUri>
+            <con:originalUri>https://api.github.com/user/keys</con:originalUri>
             <con:assertion type="Valid HTTP Status Codes" id="1486dc41-4e49-43a3-af51-cd96bb3cee24" name="Valid HTTP Status Codes">
               <con:settings/>
               <con:configuration>
