@@ -47,7 +47,7 @@ public class Activity8 {
 
         wait.until(ExpectedConditions.elementToBeClickable(AppiumBy.xpath("//android.widget.Button[@text=\"Get Started!\"]"))).click();
 
-        ActionsBase.doSwipe(driver, start, end, 50);
+        ActionBase.doSwipe(driver, start, end, 50);
 
         wait.until(ExpectedConditions.elementToBeClickable(AppiumBy.xpath("//android.widget.TextView[@text=\"To-Do List\"]"))).click();
         wait.until(ExpectedConditions.elementToBeClickable(AppiumBy.xpath("//android.widget.TextView[@text=\"To-Do List\"]")));
